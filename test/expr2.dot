@@ -1,0 +1,50 @@
+graph "expr2" {
+21018000 [label="y" color="black"]
+21020144 [label="-" color="blue"]
+21019072 [label="1" color="black"]
+21024432 [label="/" color="black"]
+21021216 [label="3" color="black"]
+21023360 [label="*" color="blue"]
+21022288 [label="6" color="black"]
+21043728 [label="+" color="black"]
+21025504 [label="y" color="black"]
+21027648 [label="+" color="blue"]
+21026576 [label="1" color="black"]
+21042656 [label="+" color="black"]
+21029792 [label="y" color="black"]
+21031936 [label="-" color="blue"]
+21030864 [label="3" color="black"]
+21037296 [label="*" color="black"]
+21036224 [label="cos" color="black"]
+21033008 [label="x" color="black"]
+21035152 [label="+" color="blue"]
+21034080 [label="6" color="black"]
+21040512 [label="/" color="black"]
+21039440 [label="ln" color="blue"]
+21038368 [label="x" color="black"]
+21041584 [label="*" color="black"]
+21028720 [label="2" color="black"]
+21052304 [label="*" color="black"]
+21044800 [label="x" color="black"]
+21051232 [label="-" color="black"]
+21050160 [label="sin" color="black"]
+21049088 [label="ln" color="black"]
+21045872 [label="x" color="black"]
+21048016 [label="-" color="blue"]
+21046944 [label="1" color="black"]
+21052304 -- 21043728 -- 21024432 -- 21020144 -- 21018000;
+21020144 -- 21019072;
+21024432 -- 21023360 -- 21021216;
+21023360 -- 21022288;
+21043728 -- 21042656 -- 21027648 -- 21025504;
+21027648 -- 21026576;
+21042656 -- 21041584 -- 21040512 -- 21037296 -- 21031936 -- 21029792;
+21031936 -- 21030864;
+21037296 -- 21036224 -- 21035152 -- 21033008;
+21035152 -- 21034080;
+21040512 -- 21039440 -- 21038368;
+21041584 -- 21028720;
+21052304 -- 21051232 -- 21044800;
+21051232 -- 21050160 -- 21049088 -- 21048016 -- 21045872;
+21048016 -- 21046944;
+}

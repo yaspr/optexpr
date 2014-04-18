@@ -1,0 +1,76 @@
+graph "expr1" {
+13661584 [label="y" color="black"]
+13663728 [label="-" color="blue"]
+13662656 [label="1" color="black"]
+13668016 [label="/" color="black"]
+13664800 [label="3" color="black"]
+13666944 [label="*" color="blue"]
+13665872 [label="6" color="black"]
+13687312 [label="+" color="black"]
+13669088 [label="y" color="black"]
+13671232 [label="+" color="blue"]
+13670160 [label="1" color="black"]
+13686240 [label="+" color="black"]
+13673376 [label="y" color="black"]
+13675520 [label="-" color="blue"]
+13674448 [label="3" color="black"]
+13680880 [label="*" color="black"]
+13679808 [label="cos" color="black"]
+13676592 [label="x" color="black"]
+13678736 [label="+" color="blue"]
+13677664 [label="6" color="black"]
+13684096 [label="/" color="black"]
+13683024 [label="ln" color="blue"]
+13681952 [label="x" color="black"]
+13685168 [label="*" color="black"]
+13672304 [label="2" color="black"]
+13695888 [label="*" color="black"]
+13688384 [label="x" color="black"]
+13694816 [label="-" color="black"]
+13693744 [label="sin" color="black"]
+13692672 [label="ln" color="black"]
+13689456 [label="x" color="black"]
+13691600 [label="-" color="blue"]
+13690528 [label="1" color="black"]
+13715184 [label="+" color="black"]
+13698032 [label="33" color="black"]
+13713040 [label="-" color="black"]
+13711968 [label="ln" color="black"]
+13710896 [label="cos" color="black"]
+13699104 [label="y" color="black"]
+13701248 [label="+" color="blue"]
+13700176 [label="1" color="black"]
+13709824 [label="+" color="black"]
+13702320 [label="y" color="black"]
+13704464 [label="-" color="blue"]
+13703392 [label="3" color="black"]
+13706608 [label="/" color="black"]
+13705536 [label="x" color="black"]
+13708752 [label="*" color="black"]
+13707680 [label="2" color="black"]
+13714112 [label="*" color="black"]
+13696960 [label="21" color="black"]
+13715184 -- 13695888 -- 13687312 -- 13668016 -- 13663728 -- 13661584;
+13663728 -- 13662656;
+13668016 -- 13666944 -- 13664800;
+13666944 -- 13665872;
+13687312 -- 13686240 -- 13671232 -- 13669088;
+13671232 -- 13670160;
+13686240 -- 13685168 -- 13684096 -- 13680880 -- 13675520 -- 13673376;
+13675520 -- 13674448;
+13680880 -- 13679808 -- 13678736 -- 13676592;
+13678736 -- 13677664;
+13684096 -- 13683024 -- 13681952;
+13685168 -- 13672304;
+13695888 -- 13694816 -- 13688384;
+13694816 -- 13693744 -- 13692672 -- 13691600 -- 13689456;
+13691600 -- 13690528;
+13715184 -- 13714112 -- 13713040 -- 13698032;
+13713040 -- 13711968 -- 13710896 -- 13709824 -- 13701248 -- 13699104;
+13701248 -- 13700176;
+13709824 -- 13708752 -- 13706608 -- 13704464 -- 13702320;
+13704464 -- 13703392;
+13706608 -- 13705536;
+13708752 -- 13707680;
+13714112 -- 13696960;
+}

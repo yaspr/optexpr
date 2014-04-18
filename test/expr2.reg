@@ -1,0 +1,30 @@
+mov r1, $(y)
+sub r1, 1
+mov r2, 3
+mul r2, 6
+div r1, r2
+mov r2, $(y)
+add r2, 1
+mov r3, $(y)
+sub r3, 3
+mov r4, $(x)
+add r4, 6
+push r4
+call cos
+mul r3, r4
+mov r4, $(x)
+push r4
+call ln
+div r3, r4
+mul r2, r3
+add r1, r2
+add r1, r1
+mov r1, $(x)
+mov r2, $(x)
+sub r2, 1
+push r2
+call ln
+push r2
+call sin
+sub r1, r2
+mul r1, r1
