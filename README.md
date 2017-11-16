@@ -19,5 +19,17 @@ The program will build a dot format tree similar to this one:
              /   \     \
             x     2     y
 
-From the IR of the tree, the program will detect operations that can be performed in parallel, for example: (x * 2), ln(y), 
-and (3 * 4) will be represented in a different color inside the dot graph to express this parallelism. 
+From the IR of the tree, the program will detect operations that can be performed in parallel, 
+for example: (x * 2), ln(y), and (3 * 4) will be represented in a different color inside the dot graph to express
+this parallelism. 
+
+It would be nice to add constant propagation and immediate operation simplification. For example, replacing 3 * 4 by 12 
+resulting in the following tree:
+
+                       +  
+                   /       \
+                  -        12
+                /   \           
+               *     ln   
+             /   \     \
+            x     2     y
