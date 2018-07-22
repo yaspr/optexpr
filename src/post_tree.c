@@ -89,8 +89,9 @@ int get_string(char *expr, char *str, int *pos)
 
    Certain optimizations can be done to minimize the number of registers needed 
    by swaping children for certain associative operations, mainly add & mul.
-
+   The swapping is invalid for foating point operations.
  */
+
 leaf *build(char *expr, hashtab *h)
 {
   lstack s;
@@ -149,7 +150,8 @@ leaf *build(char *expr, hashtab *h)
 
 //
 int main(int argc, char **argv)
-{
+{  
+  //No checks, make sure the parameters are OK, otherwise SEGFAULT!
   if (argc < 6)
     return printf("%s [outfile.dot] [graph name] [reg file] [x86 file] [postfix expression]\n", argv[0]), 0;
   

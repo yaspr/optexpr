@@ -56,8 +56,7 @@ static inline int lock_reg(reg *regs, int i)
 /*
   
   Assembly code generation with register allocation.
-  This function scares the F out of me but I don't think 
-  anybody can do better ! And it's pretty neat too :] (EGO)
+  This function scares the F out of me.
 
   rstack is an integer stack for registers, it stores the registers'
   positions in regs !
@@ -126,7 +125,7 @@ void gen_reg_asm_code_(FILE *fd, leaf *l, reg *regs, int regs_s, rstack *s)
 	}
 }
 
-//8 register fictional machine (0 to 15 => ARM)
+//8 register fictional machine (0 to 15)
 void gen_reg_asm_code(char *fname, leaf *l)
 {
   rstack s;
@@ -141,7 +140,7 @@ void gen_reg_asm_code(char *fname, leaf *l)
   fclose(fd);
 }
 
-//Specific function for x86
+//Specific function for x86 inspired assembly
 void gen_x86_asm_code(char *fname, leaf *l)
 {
   rstack s;

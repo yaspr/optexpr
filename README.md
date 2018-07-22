@@ -33,3 +33,12 @@ resulting in the following tree:
                *     ln   
              /   \     \
             x     2     y
+
+-- Compilation & running:
+
+   #cd src
+   #make
+   #cd ..
+   #cd test
+   #./tests.sh -- make sure dot is installed if you want to graphical images
+   
