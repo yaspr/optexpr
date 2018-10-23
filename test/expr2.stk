@@ -1,0 +1,33 @@
+push $(y)
+push 1
+sub
+push 3
+push 6
+mul
+div
+push $(y)
+push 1
+add
+push $(y)
+push 3
+sub
+push $(x)
+push 6
+add
+cos
+mul
+push x
+ln
+div
+push 2
+mul
+add
+add
+push $(x)
+push $(x)
+push 1
+sub
+ln
+sin
+sub
+mul

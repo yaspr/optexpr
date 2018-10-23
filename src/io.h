@@ -6,12 +6,12 @@ void write_tree_dot_(FILE *fd, leaf *l)
       if (l->left) //For unary operators (functions)
 	{
 	  fprintf(fd, "%d -- ", (int)l);
-	  //Go right !
+	  //Go left !
 	  write_tree_dot_(fd, l->left);
 	}
       
       fprintf(fd, "%d -- ", (int)l);
-      //Go left !
+      //Go right !
       write_tree_dot_(fd, l->right);
     }
   else

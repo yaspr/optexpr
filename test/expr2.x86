@@ -1,0 +1,30 @@
+mov eax, $(y)
+sub eax, 1
+mov ebx, 3
+mul ebx, 6
+div eax, ebx
+mov ebx, $(y)
+add ebx, 1
+mov ecx, $(y)
+sub ecx, 3
+mov edx, $(x)
+add edx, 6
+push edx
+call cos
+mul ecx, edx
+mov edx, $(x)
+push edx
+call ln
+div ecx, edx
+mul ebx, ecx
+add eax, ebx
+add eax, eax
+mov eax, $(x)
+mov ebx, $(x)
+sub ebx, 1
+push ebx
+call ln
+push ebx
+call sin
+sub eax, ebx
+mul eax, eax

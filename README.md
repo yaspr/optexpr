@@ -40,5 +40,5 @@ resulting in the following tree:
    #make
    #cd ..
    #cd test
-   #./tests.sh -- make sure dot is installed if you want to graphical images
+   #./tests.sh -- make sure dot is installed if you want graphical images
    
