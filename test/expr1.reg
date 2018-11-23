@@ -16,30 +16,30 @@ mov r4, $(x)
 push r4
 call ln
 div r3, r4
-mul r2, r3
-add r1, r2
-add r1, r1
-mov r1, $(x)
-mov r2, $(x)
-sub r2, 1
-push r2
-call ln
-push r2
-call sin
-sub r1, r2
-mul r1, r1
-mov r1, 33
-mov r2, $(y)
-add r2, 1
-mov r3, $(y)
-sub r3, 3
-div r3, $(x)
 mul r3, 2
-add r3, 42
-push r3
-call cos
+add r2, r3
+add r1, r2
+mov r2, $(x)
+mov r3, $(x)
+sub r3, 1
 push r3
 call ln
+push r3
+call sin
 sub r2, r3
 mul r1, r2
-add r1, r1
+mov r2, 33
+mov r3, $(y)
+add r3, 1
+mov r4, $(y)
+sub r4, 3
+div r4, $(x)
+mul r4, 2
+add r4, 42
+push r4
+call cos
+push r4
+call ln
+sub r3, r4
+mul r3, 21
+add r2, r3

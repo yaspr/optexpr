@@ -16,30 +16,30 @@ mov edx, $(x)
 push edx
 call ln
 div ecx, edx
-mul ebx, ecx
-add eax, ebx
-add eax, eax
-mov eax, $(x)
-mov ebx, $(x)
-sub ebx, 1
-push ebx
-call ln
-push ebx
-call sin
-sub eax, ebx
-mul eax, eax
-mov eax, 33
-mov ebx, $(y)
-add ebx, 1
-mov ecx, $(y)
-sub ecx, 3
-div ecx, $(x)
 mul ecx, 2
-add ecx, 42
-push ecx
-call cos
+add ebx, ecx
+add eax, ebx
+mov ebx, $(x)
+mov ecx, $(x)
+sub ecx, 1
 push ecx
 call ln
+push ecx
+call sin
 sub ebx, ecx
 mul eax, ebx
-add eax, eax
+mov ebx, 33
+mov ecx, $(y)
+add ecx, 1
+mov edx, $(y)
+sub edx, 3
+div edx, $(x)
+mul edx, 2
+add edx, 42
+push edx
+call cos
+push edx
+call ln
+sub ecx, edx
+mul ecx, 21
+add ebx, ecx

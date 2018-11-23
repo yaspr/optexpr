@@ -16,15 +16,15 @@ mov r4, $(x)
 push r4
 call ln
 div r3, r4
-mul r2, r3
+mul r3, 2
+add r2, r3
 add r1, r2
-add r1, r1
-mov r1, $(x)
 mov r2, $(x)
-sub r2, 1
-push r2
+mov r3, $(x)
+sub r3, 1
+push r3
 call ln
-push r2
+push r3
 call sin
-sub r1, r2
-mul r1, r1
+sub r2, r3
+mul r1, r2

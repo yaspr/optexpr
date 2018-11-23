@@ -175,7 +175,7 @@ void gen_stack_code_(FILE *fd, leaf *l)
 	fprintf(fd, "push %d\n", rgt->val);
       else
 	if (rgt && rgt->typ == VAR)
-	  fprintf(fd, "push %s\n", rgt->str);
+	  fprintf(fd, "push $(%s)\n", rgt->str);
 
       gen_stack_code_(fd, l->right);
 
@@ -246,7 +246,7 @@ int get_reg_num(leaf *l, leaf *r)
      This function calculates the amount of registers needed
    */    
   
-  reg -= ((l-reg == 2) && (r->reg == 0));
+  reg -= ((l->reg == 2) && (r->reg == 0));
 
   //
   return reg;

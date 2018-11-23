@@ -16,15 +16,15 @@ mov edx, $(x)
 push edx
 call ln
 div ecx, edx
-mul ebx, ecx
+mul ecx, 2
+add ebx, ecx
 add eax, ebx
-add eax, eax
-mov eax, $(x)
 mov ebx, $(x)
-sub ebx, 1
-push ebx
+mov ecx, $(x)
+sub ecx, 1
+push ecx
 call ln
-push ebx
+push ecx
 call sin
-sub eax, ebx
-mul eax, eax
+sub ebx, ecx
+mul eax, ebx

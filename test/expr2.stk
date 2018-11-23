@@ -16,7 +16,7 @@ push 6
 add
 cos
 mul
-push x
+push $(x)
 ln
 div
 push 2
